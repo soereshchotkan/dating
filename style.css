@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+body {
+  background-color: #f2f2f2;
+}
+.header {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headText1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #636365;
+  line-height: 1.4rem;
+}
+.headText2 {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e84179;
+}
+.searchDate {
+  background-color: #78b325;
+  padding: 5px 16px;
+  border: 2px solid #72aa25;
+  border-radius: 16px;
+  color: #e84179;
+  font-weight: 600;
+}
+.profiel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #f2f2f2;
+  max-width: 600px;
+  margin: 0 auto 0 auto;
+  padding: 1rem;
+}
+.userInput {
+  background-color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.userInput input {
+  padding: 0.3rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+.userInput select {
+  width: 80%;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#btn {
+  padding: 5px;
+  background-color: #78b325;
+  color: #e84179;
+  font-weight: 600;
+  border: 1px solid #64961f;
+  border-radius: 16px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputContainer label {
+  max-width: 29%;
+  width: 100%;
+  background-color: #f5f4f4;
+  padding-left: 1%;
+}
+.inputContainer input {
+  max-width: 70%;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#gender {
+  margin-bottom: 0.9rem;
+}
+.gender {
+  margin-bottom: 1rem;
+}
+.gender :first-child {
+  margin-right: 2rem;
+}
+#genderInterest {
+  margin-bottom: 0.9rem;
+}
+
+#userView {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dynamicDiv {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  margin: 1%;
+  background-color: rgb(207, 234, 240);
+  border-radius: 5px;
+}
+.textBody {
+  margin-left: 5px;
+  /* background-color: #e84179; */
+  padding-left: 5px;
+}
+.dbLocationDbAge {
+  display: flex;
+}
+.dynamicDiv img {
+  padding: 10px;
+  border-radius: 25px;
+}
+.dynamicDiv div p {
+  line-height: 0.5rem;
+  font-size: .9rem;
+}
+.dynamicDivNoData {
+  text-align: center;
+  width: 50%;
+  padding: 5%;
+  margin: 1% auto;
+  background-color: rgb(242, 226, 205);
+}
+
+@media only screen and (max-width: 600px) {
+  .headText1 {
+    line-height: 1.8rem;
+  }
+  .headText1 span {
+    display: none;
+  }
+  .headText2 {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    margin-top: 4px;
+  }
+  .searchDate {
+    background-color: #78b325;
+    padding: 4px 12px;
+  }
+}
+.error {
+  text-align: center;
+}
+.error {
+  color: #e84179;
+}
+
+@media only screen and (max-width: 400px) {
+  .headText1 {
+    line-height: 1.3rem;
+  }
+  .headText1 span {
+    display: none;
+  }
+  .headText2 {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    margin-top: 2px;
+  }
+  .searchDate {
+    background-color: #78b325;
+    padding: 2px 8px;
+  }
+  .gender :first-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .headText2 span {
+    display: none;
+  }
+  .searchDate span {
+    display: none;
+  }
+  .searchDate {
+    padding: 0px 16px;
+  }
+}

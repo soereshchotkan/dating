@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="mockData.js"></script>
+    <script defer src="script.js"></script>
+
+    <title>Eind Project Dating Site</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="d-flex">
+          <div class="headText1">Dating <span> Site for Everyone</span></div>
+          <div class="headText2"><span>Let`s</span>  Date</div>
+        </div>
+        <button class="searchDate">Search <span> a date</span></button>
+      </div>
+
+      <form onsubmit="return formValidate()">
+        <div class="profiel">Mijn profiel</div>
+        <div class="userInput">
+          <div class="inputContainer">
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="fname" required />
+          </div>
+
+          <div class="inputContainer">
+            <label for="lastname">lastname:</label>
+            <input type="text" id="lname" required />
+          </div>
+
+          <div class="inputContainer select">
+            <label for="lastname">Gender:</label>
+            <select id="gender">
+              <option value="F">F</option>
+              <option value="M">M</option>
+              <option value="X">X</option>
+            </select>
+          </div>
+
+          <div class="inputContainer">
+            <label for="age"
+              >age:
+              <p>18 of ouder</p></label
+            >
+            <input type="number" id="age" required />
+          </div>
+
+          <div class="inputContainer select">
+            <label for="place">Place: </label>
+            <select id="place">
+              <option value="Amsterdam">Amsterdam</option>
+              <option value="Rotterdam">Rotterdam</option>
+              <option value="Denhaag">Denhaag</option>
+              <option value="Utrecht">Utrecht</option>
+            </select>
+          </div>
+          <div class="inputContainer">
+            <label for="age"
+              >Min age:
+              <p>18 of ouder</p></label
+            >
+            <input type="number" id="minage" required />
+          </div>
+          <div class="inputContainer">
+            <label for="age"
+              >Max age:
+              <p>Ouder dan min age</p></label
+            >
+            <input type="number" id="maxage" required />
+          </div>
+
+          <div class="inputContainer select">
+            <label for="genderInterest">GenderInterest:</label>
+            <select id="genderInterest">
+              <option value="M">M</option>
+              <option value="F">F</option>
+              <option value="B">B</option>
+              <option value="X">X</option>
+            </select>
+          </div>
+
+          <button id="btn">Submit</button>
+        </div>
+      </form>
+      <div id="userView"></div>
+      <div class="error"></div>
+    </div>
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
